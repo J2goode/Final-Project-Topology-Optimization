@@ -2,8 +2,7 @@
 This final project was conducted to understand topology optimization through the use of a tutorial on the top88 function, created by Erik Andreassen, Anders Clausen, Mattias Schevenels, Boyan S. Lazarov, and Ole Sigmund. Topology optimization is used in many stress simulations in order to avoid expenses. There are numerous modeling softwares that do this, namely ANSYS. Having an intimate understanding of how these simulations are conducted can make for designs that are less computationally complex, which usually results in a more efficient use of material.
 	While a more in-depth explanation of the top88 function can be found at https://www.topopt.mek.dtu.dk/apps-and-software/efficient-topology-optimization-in-matlab, a brief overview will be given here. Essentially, top88 utilizes the stiffness method of finite element analysis, which accounts for all forces and moments acting across the system. This can then be used with matrix mathematics to solve for the displacement at specific points at once. This info is then used to find the minimum material necessary to support a given load.
 
-![image](https://user-images.githubusercontent.com/67770226/206836424-3d8ff9bb-6fcc-4723-b56c-fdc9e5719298.png)
-
+![image](https://user-images.githubusercontent.com/67770226/206836483-aad88477-a070-4355-874b-e15595035ebd.png)
 
 	 In our tutorial, we were given a beam whose left side was fixed in the x direction, the bottom right point was fixed in the y direction, and a force of -1N was applied on the top left node. This beam had 45 nodes, which were where forces were applied. Using these conditions, top88 gave this result:
 
