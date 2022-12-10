@@ -3,7 +3,9 @@ This final project was conducted to understand topology optimization through the
 	While a more in-depth explanation of the top88 function can be found at https://www.topopt.mek.dtu.dk/apps-and-software/efficient-topology-optimization-in-matlab, a brief overview will be given here. Essentially, top88 utilizes the stiffness method of finite element analysis, which accounts for all forces and moments acting across the system. This can then be used with matrix mathematics to solve for the displacement at specific points at once. This info is then used to find the minimum material necessary to support a given load.
 
 ![image](https://user-images.githubusercontent.com/67770226/206836483-aad88477-a070-4355-874b-e15595035ebd.png)
+
 Figure 1: Tutorial loads and elements
+
 
 	 In our tutorial, we were given a beam whose left side was fixed in the x direction, the bottom right point was fixed in the y direction, and a force of -1N was applied on the top left node. This beam had 45 nodes, which were where forces were applied. Using these conditions, top88 gave this result:
 
@@ -24,6 +26,7 @@ After 61 iterations, the model had less than 1% error and outputted the graph sh
 ![image](https://user-images.githubusercontent.com/67770226/206836440-a2984ba2-a277-450f-8e78-ddbf20707795.png)
 
 Figure 4: 80 x 40 element topology optimization, force moved to halfway point
+
 
 ![image](https://user-images.githubusercontent.com/67770226/206836443-0376dd54-159b-4484-babb-f07a958fb2be.png)
 
